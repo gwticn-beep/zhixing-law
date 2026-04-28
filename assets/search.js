@@ -35,7 +35,7 @@
       var tags = (a.tags || []).slice(0,3).map(function(t){
         return '<span style="background:#243447;color:#6ab0d4;font-size:.75rem;padding:2px 8px;border-radius:12px;margin-right:4px;">' + escHtml(t) + '</span>';
       }).join('');
-      return '<div class="article-item" style="cursor:pointer" onclick="location.href='' + href + ''">' +
+      return '<div class="article-item" style="cursor:pointer" onclick="location.href=\'' + href + '\'">' +
         '<h3><a href="' + href + '" onclick="event.stopPropagation()">' + escHtml(a.title) + '</a></h3>' +
         '<div class="article-meta">' +
           '<span>' + escHtml(a.date || '') + '</span>' +
